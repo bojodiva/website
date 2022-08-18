@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+:root {
+    --custom-color: rgb(41, 38, 38);
+    --padding: 20px;
+    --medium-font-size: 1.2em;
+    --big-font-size: 2.5em;
+    --input-padding: 15px 25px;
+    --border-radius: 8px;
+    --margin-bottom: 15px;
+    --margin-top: 10px;
+    --border: 1px solid rgb(154, 191, 221);
+    --misc-color: steelblue;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.container {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    min-height: 400px;
+}
+
+
+.form_heading {
+    text-align: center;
+    color: var(--misc-color);
+    margin-top: var(--margin-top);
+    padding: var(--padding);
+}
+
+
+
+.form {
+    width: 60%;
+    margin: 30px auto;
+    padding: var(--padding);
+}
+
+
+.form_group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: var(--margin-top);
+    margin-bottom: var(--margin-bottom);
+}
+
+
+.form_group-label {
+    color: var(--custom-color);
+    font-size: var(--medium-font-size);
+    margin-bottom: var(--margin-bottom);
+}
+
+
+input {
+    padding: var(--input-padding);
+    border-radius: var(--border-radius);
+    margin-bottom: var(--margin-bottom);
+    border: var(--border);
+}
+
+
+input::placeholder {
+    font-size: medium;
+}
+
+
+select {
+    padding: var(--input-padding);
+    border-radius: var(--border-radius);
+    border: var(--border);
+    color: var(--custom-color);
+    background-color: white;
+}
+
+
+.btn-submit {
+    margin-top: var(--margin-top);
+    border: none;
+    padding: 14px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    background-color: var(--misc-color);
+    color: white;
+    font-size: var(--medium-font-size);
+    transition: 0.3s;
+}
+
+
+.btn-submit:hover {
+    background: rgb(79, 110, 136);
+}
+
+
+/* table styles */
+
+.table-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.table-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.heading {
+    text-align: center;
+    color: var(--misc-color);
+    margin-top: 40px;
+}
+
+
+table {
+    width: 100%;
+    margin-top: 50px;
+}
+
+td,
+th {
+    border: var(--border);
+    text-align: left;
+    padding: var(--padding);
+}
+
+thead {
+    background-color: var(--misc-color);
+    border: none;
+}
+
+@media (min-width:0px) and (max-width:840px) {
+    .form {
+        width: 100%;
+    }
+
+    .table-wrapper {
+        width: 100%;
+    }
+}
